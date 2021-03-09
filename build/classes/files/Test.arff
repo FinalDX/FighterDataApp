@@ -1,0 +1,42 @@
+@relation Test 
+ 
+@attribute Winner {Red, Blue, Draw}
+@attribute B_avg_BODY_landed numeric
+@attribute B_avg_HEAD_landed numeric
+@attribute B_avg_KD numeric
+@attribute B_avg_LEG_landed numeric
+@attribute B_avg_PASS numeric
+@attribute B_avg_REV numeric
+@attribute B_avg_SUB_ATT numeric
+@attribute B_avg_TD_landed numeric
+@attribute B_losses numeric
+@attribute B_total_title_bouts numeric
+@attribute B_win_by_Decision_Majority numeric
+@attribute B_win_by_Decision_Split numeric
+@attribute B_win_by_Decision_Unanimous numeric
+@attribute B_win_by_KO/TKO numeric
+@attribute B_win_by_Submission numeric
+@attribute B_win_by_TKO_Doctor_Stoppage numeric
+@attribute B_Reach_cms numeric
+@attribute R_avg_BODY_landed numeric
+@attribute R_avg_HEAD_landed numeric
+@attribute R_avg_KD numeric
+@attribute R_avg_LEG_landed numeric
+@attribute R_avg_PASS numeric
+@attribute R_avg_REV numeric
+@attribute R_avg_SUB_ATT numeric
+@attribute R_avg_TD_landed numeric
+@attribute R_losses numeric
+@attribute R_total_title_bouts numeric
+@attribute R_win_by_Decision_Majority numeric
+@attribute R_win_by_Decision_Split numeric
+@attribute R_win_by_Decision_Unanimous numeric
+@attribute R_win_by_KO/TKO numeric
+@attribute R_win_by_Submission numeric
+@attribute R_win_by_TKO_Doctor_Stoppage numeric
+@attribute R_Reach_cms numeric
+@attribute B_age numeric
+@attribute R_age numeric
+
+@data
+?,10.114055103687502,19.832344964687493,0.42529354681250003,13.8323428378125,1.4199315687812502,0.05960522812500001,0.374265848875,0.8158440867812499,8,1,0,0,6,9,6,0,185.42,4.036471861545454,23.328787879090907,0.7597402597272727,3.8952380951818184,1.258946608909091,0.030555555545454548,0.0,0.8313492063636364,1,3,1,0,1,7,0,0,187.96,35,3

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DataSearchController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="60.0" style="-fx-background-color: #2f2f2f;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Data Search" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="BOTTOM_RIGHT">
+               <children>
+                  <Label text="Search:">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="searchTextField" onAction="#enterPressedSearchTextField">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" onAction="#enterPressedSearchTextField" prefWidth="100.0" text="Search">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#clearButtonPushed" prefWidth="100.0" text="Clear">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#dashboardButtonPressed" prefWidth="100.0" text="Dashboard">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <TableView fx:id="fightTable" prefHeight="1000.0">
+              <columns>
+                <TableColumn fx:id="redFighterColumn" prefWidth="150.0" text="red_fighter" />
+                <TableColumn fx:id="blueFighterColumn" minWidth="1.0" prefWidth="150.0" text="blue_fighter" />
+                  <TableColumn fx:id="dateColumn" prefWidth="79.0" text="date" />
+                  <TableColumn fx:id="winnerColumn" prefWidth="100.0" text="winner" />
+                  <TableColumn fx:id="weightClassColumn" prefWidth="213.0" text="weight_class" />
+                  <TableColumn fx:id="numOfRoundsColumn" prefWidth="100.0" text="num_of_rounds" />
+                  <TableColumn fx:id="bStanceColumn" prefWidth="150.0" text="b_stance" />
+                  <TableColumn fx:id="bHeightColumn" prefWidth="130.0" text="b_height_cm" />
+                  <TableColumn fx:id="bReachColumn" prefWidth="110.0" text="b_reach_cm" />
+                  <TableColumn fx:id="rStanceColumn" prefWidth="150.0" text="r_stance" />
+                  <TableColumn fx:id="rHeightColumn" prefWidth="103.0" text="r_height_cm" />
+                  <TableColumn fx:id="rReachColumn" prefWidth="135.0" text="r_reach_cm" />
+              </columns>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </VBox.margin>
+            </TableView>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER_RIGHT" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #2f2f2f;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#logOutButtonPressed" prefWidth="100.0" text="Log out">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children></HBox>
+   </bottom>
+</BorderPane>
